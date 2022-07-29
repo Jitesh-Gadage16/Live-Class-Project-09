@@ -140,7 +140,7 @@ li.menu-links {
     height: 50px;
     border-radius: 50px;
     position: absolute;
-    right: 0px;
+    right: -20px;
     top: 123px;
     justify-content: center;
     align-items: center;
@@ -298,4 +298,33 @@ p.blog-author {
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
+}
+
+.footer-div{
+    background: #481AFE;
+    padding: 65px 0;
+}
+.b-right{
+    border-right: 1px solid #fff;
+    padding: 0px 20px;
+    color: #fff;
+}
+.footer-menus{
+    padding:20px 0;
+}
+.footer-links{
+    color: #fff;
+}
+.footer-social{
+    justify-content: flex-end;
+}
+
+.social-icons{
+    margin-right: 10px;
+}
+
+.footer-right{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end
 }
