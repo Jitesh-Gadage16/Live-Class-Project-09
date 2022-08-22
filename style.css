@@ -41,7 +41,7 @@ body{
 }
 
 .container {
-  width: 1250px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -75,9 +75,9 @@ li.menu-links {
 .hero-imgDiv{
     position: absolute;
     right: 0;
-    width: 640px;
-    height: 500px;
-    top: 200px;
+    /* width: 640px;
+    height: 500px; */
+    top: 155px;
 }
 
 .hero-img{
@@ -89,6 +89,8 @@ li.menu-links {
     letter-spacing: 2px;
     margin-bottom: 15px;
     color: #fff;
+    max-width: 600px;
+    
 }
 
 .herro-heading::before{
@@ -327,4 +329,240 @@ p.blog-author {
     display:flex;
     flex-direction: column;
     justify-content:flex-end
+}
+
+@media screen and (max-width:750px) {
+    img.hero-img {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    p.hero-sub-head {
+        text-align: center;
+    }
+    .mobile{
+        display: block!important;
+    }
+    .desktop {
+        display:none!important;
+    }
+    .herosection-div{
+        flex-direction: column;
+    }
+    .header-div {
+        height: 100vh!important;
+    }
+    .company-div {
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+    .company-name{
+        padding: 0!important;
+        color: #fff;
+        text-transform: capitalize;
+        font-size:1.2rem;
+    }
+    .herro-heading{
+        font-size:2rem;
+        text-align: center!important;
+    }
+    .herosection-div {
+        height: 80vh!important;
+    }
+
+    .herro-heading::before{
+        display: none!important
+    }
+    .navbar{
+        padding: 0 15px;
+    }
+    .apicard-div{
+        flex-wrap: wrap;
+    }
+    .api-cards:last-child::after{
+        display: none;
+    }
+    .api-category-head{
+        text-align: center;
+    }
+    .api-cards{
+        width: 300px!important;
+    }
+    .faq-image{
+        display: none!important;
+    }
+    .faq-content h4 {
+        padding: 15px 0;
+    }
+    .downlaod-nowDiv{
+        padding:0 20px!important;
+    }
+    .downlaod-btn {
+        right: 40px!important;
+    }
+    input{
+        width: 250px!important;
+        padding:20px;
+    }
+    .footer-right{
+        justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column-reverse;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-div .container{
+        flex-wrap: wrap;
+    }
+
+    .blog-cards.d-flex{
+        margin: 20px 0;
+    }
+
+    .blog-rightDiv{
+        padding:30px;
+    }
+
+    .blog-bottom {
+        position: absolute;
+        bottom: 0px;
+        right: 34px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .herosection-div{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hero-imgDiv{
+        position:static!important;
+        width: 300px!important;
+        display: felx;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .hero-leftdiv{
+        display: felx;
+        justify-content:center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 1099px) {
+
+    .hero-imgDiv{
+        width: 400px;
+    }
+    
+}
+
+@media (max-width: 1424px) {
+
+    .hero-imgDiv{
+        width: 500px;
+    }
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 17vh;
+    align-items: center;
+}
+
+nav img {
+    width: 120px;
+}
+
+.desktop {
+    display: block;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+    color: #3e4794;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+.faq-section{
+    height: 319px;
+    background-color: #E9EDFF;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-image {
+    /* width: 47%; */
+    /* height: 251px; */
+    float: right;
+}
+.faq-image img{
+    /* width: 100%; */
+}
+  .faq-content{
+    float: left;
+    margin-left: 90px;
+  }
+  
+  .faq-content h2{
+    font-weight: bolder;
+    font-size: 200%;
+  }
+  
+  
+  .faq-content button{
+    background: #5A31FC;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+
+  .sidenavMenu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    right: -1000px;
+    background: #fff;
+    overflow-x: hidden;
+    transition: .8s;
+}
+
+.mob-menus div {
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 20px;
 }

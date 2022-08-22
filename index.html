@@ -22,7 +22,7 @@
                             <img src="./assets/Logo (1).png" alt="" class="nav-logo">
                         </div>
 
-                        <div class="nav-menus">
+                        <div class="nav-menus desktop">
                             <ul class="menu0-list d-flex">
                                 <li class="menu-links">Home</li>
                                 <li class="menu-links">APIs</li>
@@ -36,13 +36,22 @@
 
                             </ul>
                         </div>
+                        <div class="mobile">
+                            <div id="menu-open" class="cur-pointer z-99999 " onclick="openNav();">
+                              <img loading="lazy" style="height: 30px; width: 30px;" src="https://cdn.playerzpot.com/images/mob-menu-head.png
+                                " alt="Play fantasy games online">
+                            </div>
+                            <div id="menu-close" style="display: none; cursor: pointer;" class="d-none cur-pointer menu-close z-99999">
+                              <img loading="lazy" onclick="closeNav()" style="height: 25px; width: 25px;" src="https://cdn.playerzpot.com/images/cancel-menu.png" alt="Play fantasy games online">
+                            </div>
+                          </div>
                     </div>
                 </div>
 
                 <div class="herosection-div d-flex">
                     <div class="hero-wrapper d-flex flex-column justify-content-center">
                         <h1 class="herro-heading">
-                            Lorem ipsum dolor sit amet, <br>
+                            Lorem ipsum dolor sit amet, 
                             consectetur adipiscing elit.
                         </h1>
 
@@ -51,10 +60,12 @@
                         </p>
                     </div>
 
-
-                    <div class="hero-imgDiv">
-                        <img src="./assets/IMAGE HERE.png" alt="" class="hero-img">
+                    <div class="hero-leftdiv">
+                        <div class="hero-imgDiv">
+                            <img src="./assets/IMAGE HERE.png" alt="" class="hero-img">
+                        </div>
                     </div>
+
                 </div>
                 <div class="company-div d-flex align-items-center">
                     <div class="company-name">
@@ -73,7 +84,7 @@
         <div class="apicategory-div">
             <div class="container">
                 <h3 class="api-category-head">
-                    API's <br> By Category
+                    API's  By Category
                 </h3>
 
                 <div class="apicard-div d-flex justify-content-evenly">
@@ -117,7 +128,7 @@
         <div class="apicategory-div">
             <div class="container">
                 <h3 class="api-category-head">
-                    Latest <br>Blog Article
+                    Latest Blog Article
                 </h3>
 
                 <div class="apicard-div d-flex justify-content-evenly">
@@ -178,40 +189,23 @@
             </div>
         </div>
 
-        <div class="Question-div">
-            <div class="container">
-                <div class="ask-questions d-flex">
-                    <div class="ask-content">
+        <div class="faq-section container">
+            <div class="faq-content">
+                <h2>Have <br> a question</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia <br>nam animi exercitationem et eum enim nulla veritatis,</h4>
+                <h4>Do you have any question about anythings ?</h4>
 
-                        <h3 class="api-category-head">
-                            Have <br>a Question
-                        </h3>
-    
-                        <p class="desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique mollitia <br>
-                            nam animi exercitationem et eum enim nulla veritatis,
-                        </p>
-    
-                        <h4 class="questions">
-                            Do you have any question about anythings ?
-                        </h4>
-                        <button class="contact-us">Contact Us</button>
-                    </div>
-
-
-                    <div class="serch-barimg">
-                        <img src="./assets/Rectangle_38-2 (1).png" alt="" class=""> 
-                    </div>
-                </div>
-
-              
+                <button >Contact Us</button>
+            </div>
+            <div class="faq-image">
+                <img src="./assets/Rectangle_38-2 (1).png" alt="">
             </div>
         </div>
 
 
         <div class="container">
-        <div class="downlaod-nowDiv d-flex justify-content-between align-items-center">
-            
+            <div class="downlaod-nowDiv d-flex justify-content-between align-items-center">
+
                 <div class="downlaod-left">
                     Downlaod Now
                 </div>
@@ -219,10 +213,10 @@
                     <form>
                         <input placeholder="Enter your email address">
                         <button class="downlaod-btn">Download</button>
-                      </form>
+                    </form>
                 </div>
             </div>
-           
+
         </div>
 
         <div class="footer-div">
@@ -237,7 +231,7 @@
                             Home
                         </div>
                         <div class="footer-links b-right">
-                           APIs
+                            APIs
                         </div>
                         <div class="footer-links b-right">
                             Blogs
@@ -255,10 +249,10 @@
                     </div>
                     <div class="footer-menus d-flex">
                         <div class="footer-links b-right">
-                          FAQ
+                            FAQ
                         </div>
                         <div class="footer-links b-right">
-                           Business
+                            Business
                         </div>
                         <div class="footer-links b-right">
                             Help
@@ -269,6 +263,52 @@
         </div>
 
     </div>
+
+
+    <div id="mySidenavMenu" class="sidenavMenu mobile" style="right: -1000px;">
+        <div class="mob-menus">
+          <div>
+            Home
+          </div>
+          <div>
+           APIs
+          </div>
+          <div>
+            Blogs
+          </div>
+          <div>
+            Forums
+          </div>
+          <div>
+            Login
+          </div>
+          <div>
+            Signup
+          </div>
+                 
+                      
+        </div>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenavMenu").style.right = "0px";
+          document.getElementById("menu-open").style.display = "none";
+          document.getElementById("menu-close").style.display = "block";
+          document.body.style.overflow = "hidden";
+    
+          // var bodyScroll = document.getElementsByClassName("bodyClass");
+          // bodyScroll.classList.add("asdasd");
+        }
+    
+        function closeNav() {
+          // alert('asda');
+          document.getElementById("mySidenavMenu").style.right = "-1000px";
+          document.getElementById("menu-open").style.display = "block";
+          document.getElementById("menu-close").style.display = "none";
+          document.body.style.overflow = "auto";
+        }
+      </script>
 
 </body>
 
