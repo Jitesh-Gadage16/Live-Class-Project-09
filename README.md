@@ -1,4 +1,4 @@
-# Developer Landing Page ![](https://img.shields.io/badge/Live%20Class%20Project%20-12-green?style=for-the-badge&logo=appveyor)
+# Developer Landing Page ![](https://img.shields.io/badge/Live%20Class%20Project%20-09-green?style=for-the-badge&logo=appveyor)
 
 ![](https://img.shields.io/badge/iNeuron-LCO-brightgreen) ![](https://img.shields.io/static/v1?label=Hitesh-Choudhary&message=Full-Stack-Javascript-Course&color=red)
 
@@ -24,9 +24,9 @@
 ##   
 
 
- ## 🚀 Project 12 Live Link 
+ ## 🚀 Project 09 Live Link 
  
-- This Project is been Hosted on Netlify. [Project Live Link](https://live-class-project-12.netlify.app)
+- This Project is been Hosted on Netlify. [Project Live Link](https://live-class-projectt-09.netlify.app)
 
 
 
